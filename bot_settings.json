@@ -1,0 +1,36 @@
+{
+  "join_btn": "المشاركة في السحب",
+  "stop_btn": "⛔ أوقف المشاركة",
+  "draw_btn": "🎲 ابدأ السحب",
+  "alert_joined": "تم الاشتراك بالسحب",
+  "winners_prefix": "🎉 عدد الفائزين:",
+  "post_extra": "",
+  "replacements": {},
+  "extra_admins": [],
+  "screen_welcome": "شرفتنى يا {first_name} فى روليت Crypto Royale <tg-emoji emoji-id=\"5451714942157724312\">🤍</tg-emoji>\n\n<tg-emoji emoji-id=\"5776284293571552999\">🆔</tg-emoji> الايدى بتاعك: {uid}\n\nالاكثر اماناً <tg-emoji emoji-id=\"5251203410396458957\">🤍</tg-emoji>",
+  "screen_quick_roulette": "<tg-emoji emoji-id=\"5224607267797606837\">⚡</tg-emoji> <b>الروليت السريع</b>\n\nاختر القناة أو الجروب اللي تريد تنشر فيه الروليت:",
+  "screen_regular_roulette": "يرجى اختيار القناة أو المجموعة التي تريد إنشاء السحب فيها <tg-emoji emoji-id=\"5350460637182993292\">🎯</tg-emoji>\n\nتأكد أولًا من التالي: <tg-emoji emoji-id=\"5240379770687999291\">🔹</tg-emoji>\n\n<tg-emoji emoji-id=\"5316887736823591263\">👤</tg-emoji> أن تكون مشرفًا في القناة أو المجموعة.\n\n<tg-emoji emoji-id=\"5102856631562011824\">🎰</tg-emoji> أن يكون البوت مضافًا كمشرف أيضًا.",
+  "screen_description": "<tg-emoji emoji-id=\"5458382591121964689\">✍️</tg-emoji> اكتب نص السحب كما تحب بالتنسيق العادي من تيليجرام.\n\nيمكنك استخدام التنسيقات التالية:\n<span class=\"tg-spoiler\">للتشويش</span>\n<b>للتعريض</b>\n<i>للميلان</i>\n<u>للتسطير</u>\n<s>للتشطيب</s>\n<code>للنص المنسوخ</code>\n\n<tg-emoji emoji-id=\"5316827280863934685\">✅</tg-emoji> نفس التنسيق اللي هتكتبه هيوصل في رسالة السحب.\n\n<tg-emoji emoji-id=\"5447644880824181073\">⚠️</tg-emoji> رجاءً عدم إرسال أي روابط نهائياً",
+  "screen_req_channels": "🔒 <b>هل تريد إضافة قناة شرط للاشتراك؟</b>\n\nيمكنك إضافة قناة يجب على المشارك الاشتراك فيها.",
+  "screen_winners_count": "<tg-emoji emoji-id=\"5350460637182993292\">🎯</tg-emoji> <b>كم عدد الفائزين في هذه الروليت؟</b>\n\nأرسل الرقم فقط (مثال: 1، 2، 3...)\nالحد الأقصى: 100 فائز",
+  "screen_support": "<tg-emoji emoji-id=\"5443038326535759644\">💬</tg-emoji> <b>الدعم الفني</b>\n\nللتواصل مع الدعم راسل:\n<tg-emoji emoji-id=\"5316887736823591263\">👤</tg-emoji> @J_O_H_N8",
+  "btn_home_quick": "⚡ روليت سريع",
+  "btn_home_regular": "🏆 الروليت العادية",
+  "btn_home_channels": "📢 القنوات",
+  "btn_home_support": "🛠️ الدعم",
+  "btn_home_official": "📣 القناة الرسمية",
+  "custom_home_btns": [
+    {
+      "text": "جميع السحوبات",
+      "url": "https://t.me/CryptoRoyale10"
+    },
+    {
+      "text": "📘 تعليمات الاستخدام",
+      "msg": "<tg-emoji emoji-id=\"5332586662629227075\">🗂</tg-emoji> <b>تعليمات الاستخدام</b>\n\n<tg-emoji emoji-id=\"5440539497383087970\">1️⃣</tg-emoji> ضع البوت مشرف في قناتك\n<tg-emoji emoji-id=\"5447203607294265305\">2️⃣</tg-emoji> اضغط 'إنشاء روليت' واكتب نص السحب\n<tg-emoji emoji-id=\"5453902265922376865\">3️⃣</tg-emoji> اختر بدون شروط أو مع قنوات شرط"
+    }
+  ],
+  "user_reports": {
+    "6145230334": 3
+  },
+  "banned_users": []
+}
