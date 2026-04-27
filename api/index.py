@@ -1,7 +1,6 @@
 import sys
 import os
 import asyncio
-import json
 import logging
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -9,7 +8,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from flask import Flask, request, Response
 from telegram import Update
 
-flask_app = Flask(__name__)
+app = Flask(__name__)
 
 _ptb_app = None
 
@@ -21,7 +20,7 @@ def get_ptb_app():
     return _ptb_app
 
 
-@flask_app.route("/api/webhook", methods=["POST"])
+@app.route("/api/webhook", methods=["POST"])
 def webhook():
     try:
         ptb = get_ptb_app()
@@ -42,22 +41,7 @@ def webhook():
         return Response("Error", status=500)
 
 
-@flask_app.route("/", methods=["GET"])
-@flask_app.route("/api", methods=["GET"])
+@app.route("/", methods=["GET"])
+@app.route("/api", methods=["GET"])
 def health():
     return Response("Crypto Royale Bot is running!", status=200)
-
-
-def handler(req, res):
-    with flask_app.test_request_context(
-        path=req.get("path", "/"),
-        method=req.get("method", "GET"),
-        headers=req.get("headers", {}),
-        data=json.dumps(req.get("body", {})),
-        content_type="application/json",
-    ):
-        response = flask_app.full_dispatch_request()
-        res["statusCode"] = response.status_code
-        res["body"] = response.get_data(as_text=True)
-        res["headers"] = dict(response.headers)
-    return res
