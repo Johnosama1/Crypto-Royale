@@ -27,7 +27,7 @@ from telegram.ext import (
 )
 
 # =========== إعداداتك الشخصية ===========
-TELEGRAM_BOT_TOKEN = "8474184257:AAGR5025u_KzEf4Gywo5YH5qLb26Qf0vs_I"
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "8474184257:AAGR5025u_KzEf4Gywo5YH5qLb26Qf0vs_I")
 TOKEN = TELEGRAM_BOT_TOKEN
 if not TOKEN:
     raise RuntimeError("TELEGRAM_BOT_TOKEN environment variable is not set. Please add it as a secret.")
