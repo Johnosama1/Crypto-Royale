@@ -3107,7 +3107,8 @@ async def getemoji_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 # =========== تشغيل البوت ===========
-def main():
+def build_application():
+    """Build and configure the PTB Application (without running it)."""
     load_data()
     init_db()
 
@@ -3163,13 +3164,18 @@ def main():
 
     logging.info(f"✅ البوت يعمل الآن مع {len(all_users_data)} مستخدم مسجل...")
 
-    async def on_startup(app):
+    async def on_startup(a):
         try:
-            await app.bot.set_my_short_description(short_description="")
+            await a.bot.set_my_short_description(short_description="")
         except Exception:
             pass
 
     app.post_init = on_startup
+    return app
+
+
+def main():
+    app = build_application()
 
     is_deployed = os.environ.get("REPLIT_DEPLOYMENT") == "1"
 

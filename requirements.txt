@@ -1,7 +1,5 @@
 python-telegram-bot[job-queue]==20.7
 apscheduler
 aiofiles
-aiofiles
-apscheduler
-python-telegram-bot[job-queue]==20.7
-telegram
+flask
+python-dotenv

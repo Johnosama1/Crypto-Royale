@@ -1,0 +1,6 @@
+bot.log
+bot.log.txt
+*.txt
+.git
+.local
+attached_assets
